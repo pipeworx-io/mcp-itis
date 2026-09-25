@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/itis",
   "title": "Itis",
   "description": "ITIS (Integrated Taxonomic Information System) MCP.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/itis",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-itis",
