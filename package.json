@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-itis",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ITIS (Integrated Taxonomic Information System) MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-cc9256a6602f641854f5f9419821718f6a6b2bf4c5b65406fcfaff50f3629385",
-    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
+    "sourceHash": "v1-8ad4cb256377cf245f47e08bad53f9fceb1608e35fdaef3bcf0de518cbf0b393",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }
