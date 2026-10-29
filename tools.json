@@ -1,0 +1,56 @@
+[
+  {
+    "name": "search_taxa",
+    "description": "Search ITIS (authoritative US-government integrated taxonomy for plants, animals, fungi, and microbes) by scientific name and resolve it to TSNs (Taxonomic Serial Numbers). Returns matching taxa with tsn, scientific name, author, and kingdom. Keyless. Use the tsn with get_hierarchy or get_common_names.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Scientific name to search, e.g. \"Puma concolor\"."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "get_hierarchy",
+    "description": "Walk the full taxonomic hierarchy (lineage) for a TSN from ITIS — kingdom down to the taxon and its children. Returns each rank with its tsn, name, rank, and parent_tsn. Pass a TSN from search_taxa. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "tsn": {
+          "type": [
+            "string",
+            "number"
+          ],
+          "description": "Taxonomic Serial Number, e.g. 180582."
+        }
+      },
+      "required": [
+        "tsn"
+      ]
+    }
+  },
+  {
+    "name": "get_common_names",
+    "description": "Get vernacular (common) names in all languages for a TSN from ITIS, e.g. \"Bobcat\", \"lynx roux\". Pass a TSN from search_taxa. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "tsn": {
+          "type": [
+            "string",
+            "number"
+          ],
+          "description": "Taxonomic Serial Number, e.g. 180582."
+        }
+      },
+      "required": [
+        "tsn"
+      ]
+    }
+  }
+]

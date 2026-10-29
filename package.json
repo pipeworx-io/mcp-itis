@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-itis",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "ITIS (Integrated Taxonomic Information System) MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-itis": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "itis"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-itis.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/itis",
   "pipeworx": {
-    "sourceHash": "v1-dee4d469d7a0a9574e9522e71ccfaa3cac96672892b49e67847870853463e94a",
-    "sourceCommit": "33741fe6d9ba71856e73fa683c73572d1ddf2e93"
+    "mode": "gateway",
+    "slug": "itis",
+    "gatewaySlug": "itis",
+    "sourceHash": "v1-718da8010f2418dbe673dd3c970eee7434c898c1ee50c929e8152a6f17fc4101",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
