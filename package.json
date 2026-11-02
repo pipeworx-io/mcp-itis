@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-itis",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ITIS (Integrated Taxonomic Information System) MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "itis",
     "gatewaySlug": "itis",
-    "sourceHash": "v1-718da8010f2418dbe673dd3c970eee7434c898c1ee50c929e8152a6f17fc4101",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-3cf3cfae558d8427ff2457c136df13d1fc64afc9972815e8a122b701c4c91a79",
+    "sourceCommit": "236b0a46d91f343fe094da9f499c378e88f78312"
   }
 }
